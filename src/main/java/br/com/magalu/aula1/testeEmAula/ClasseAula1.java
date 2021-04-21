@@ -85,4 +85,9 @@ public class ClasseAula1 {
         return e;
     }
 
+    
+    public void testeFork(){
+        System.out.println("Hello Teste Fork");
+    }
+
 }
