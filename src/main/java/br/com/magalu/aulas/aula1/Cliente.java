@@ -2,16 +2,13 @@ package br.com.magalu.aulas.aula1;
 
 public class Cliente {
 
-    private static final int CONSTANTE= 7;
-
+    private static final int CONSTANTE = 7;
+    protected String documento;
     String nome;
 
-    protected String documento;
-
-
-    public void exercicio1(){
-        int a =10;
-        int b =20;
+    public void exercicio1() {
+        int a = 10;
+        int b = 20;
 
         int c = a;
         a = b;
@@ -21,16 +18,16 @@ public class Cliente {
         System.out.println("b");
     }
 
-    public void pagamento(){
+    public void pagamento() {
 
     }
 
-    public void buscarInformacoesClients(){
+    public void buscarInformacoesClients() {
 
     }
 
 
-    public void login(){
+    public void login() {
 
     }
 

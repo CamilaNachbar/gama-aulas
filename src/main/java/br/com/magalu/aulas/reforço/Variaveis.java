@@ -2,19 +2,19 @@ package br.com.magalu.aulas.reforço;
 
 public class Variaveis {
 
-    private void variaveisPrimitivas(){
+    private void variaveisPrimitivas() {
         //Os tipos primitivos são tipos de dados pré-definidos e que ocupam um espaço específico em memória para armazenar o conteúdo. Os tipos de dados/variáveis primitivas no Java são 8:
 
         //byte, short, char, int, long, float, double e boolean.
         float valorfloat = 111111F;
         short valorShort = 11;
-        char valorChar= 'F'; // um unico caracter
-        int valorInt = 1 ; // valor inteiro
+        char valorChar = 'F'; // um unico caracter
+        int valorInt = 1; // valor inteiro
         long valorlong = 6546545464L;
         double valordouble = 23133132D;
         boolean valorboolean = false;
 
-       //Todos estes são conhecidos como tipos primitivos e não é possível criar novos tipos primitivos.
+        //Todos estes são conhecidos como tipos primitivos e não é possível criar novos tipos primitivos.
         //Os tipos byte, short, char, int e long são tipos numéricos inteiro, ou seja, só podem armazenar valores,
         // como 1, 2, 3, 4 e assim por diante. Valores como 1.2 (com vírgula/ponto) não é permitido. Obs: o char serve para armazenar caracteres, m
         // as também permite receber valores numéricos.
@@ -26,7 +26,7 @@ public class Variaveis {
 
     }
 
-    private void variaveisUtilizandoWrappers(){
+    private void variaveisUtilizandoWrappers() {
         //Permitem utilizar uma serie de funcionalidades que auxiliam e facilitam a implementaçoes como conversoes das variaveis
         // por exemplo converte de inteiro para texto
 
@@ -38,7 +38,7 @@ public class Variaveis {
 
     }
 
-    private void String(){
+    private void String() {
         String cadeiaDeCaracteres = "";
         // a String tem como objetivo receber uma cadeia de caracteres
     }

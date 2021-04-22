@@ -2,9 +2,9 @@ package br.com.magalu.aulas.aula1.testeEmAula;
 
 public class ClasseAula1 {
 
-    public void exercicio1(){
-        int a =10;
-        int b =20;
+    public void exercicio1() {
+        int a = 10;
+        int b = 20;
 
         int c = a;
         a = b;
@@ -14,21 +14,21 @@ public class ClasseAula1 {
         System.out.println("b: " + b);
     }
 
-    protected void a(){
-        int a =10;
-        int b =20;
+    protected void a() {
+        int a = 10;
+        int b = 20;
 
         System.out.println("b" + b);
 
-        b =5;
+        b = 5;
 
         System.out.println("a: " + a);
         System.out.println("b: " + b);
     }
 
-    public void b(){
-        int a =30;
-        int b =20;
+    public void b() {
+        int a = 30;
+        int b = 20;
 
         int c = a + b;
 
@@ -36,7 +36,7 @@ public class ClasseAula1 {
         b = 10;
 
         System.out.println("b" + b);
-        System.out.println("c" + c);;
+        System.out.println("c" + c);
 
         c = a + b;
 
@@ -46,9 +46,9 @@ public class ClasseAula1 {
 
     }
 
-    public void c(){
-        int a =10;
-        int b =20;
+    public void c() {
+        int a = 10;
+        int b = 20;
 
         System.out.println("b" + b);
 
@@ -62,20 +62,20 @@ public class ClasseAula1 {
 
     }
 
-    public Integer d(){
+    public Integer d() {
 
-        int a =30;
-        int b =20;
+        int a = 30;
+        int b = 20;
         Integer e = 20;
         int c = a + b;
 
-       c = e + b;
+        c = e + b;
 
         System.out.println("c" + c);
         b = 10;
 
         System.out.println("b" + b);
-        System.out.println("c" + c);;
+        System.out.println("c" + c);
 
         c = a + b;
 

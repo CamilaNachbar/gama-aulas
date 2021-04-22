@@ -1,14 +1,11 @@
 package br.com.magalu.aulas.reforço;
 
-import java.util.ArrayList;
-import java.util.List;
-
 public class TrabalhandoCondicionais {
 
     //modificador de acesso privado
     // retorno void, ou seja, não precisa retornar nada
     // nome do metodo
-    private void estruturaDoIf(){
+    private void estruturaDoIf() {
         System.out.println("Estrutura do IF");
 
         boolean aTrue = true;
@@ -20,18 +17,18 @@ public class TrabalhandoCondicionais {
 
         System.out.println("SEGUNDO IF");
         // começa o bloco de execuçao
-        if(aFalse){
+        if (aFalse) {
             //não entra aqui por que é false
             System.out.println("condição else");
-        }else if (aFalse || aFalse){
+        } else if (aFalse || aFalse) {
             //aqui foi usado a condição relacional OU "||", nela uma das duas condiçoes devem ser verdadeiras
             System.out.println("condição if com OU");
 
-        }else if (aFalse && aTrue){
+        } else if (aFalse && aTrue) {
             //aqui foi usado a condição relacional E "&&", nela as duas condiçoes devem ser verdadeiras
             System.out.println("condição if com &&");
 
-        }else {
+        } else {
             // dentro do else sem nenhuma condição se cada uma dos ifs anteriores não for verdadeiro ele cai aqui
             // faça o teste
             System.out.println("condição else");
@@ -42,17 +39,17 @@ public class TrabalhandoCondicionais {
         System.out.println("SEGUNDO IF");
         // começa novo bloco de execuçao
         // o que acontece aqui????????????????
-        if(aTrue){
+        if (aTrue) {
             //não entra aqui por que é false
             System.out.println("condição if");
-        }else if (aFalse || aFalse){
+        } else if (aFalse || aFalse) {
             //aqui foi usado a condição relacional OU "||", nela uma das duas condiçoes devem ser verdadeiras
             System.out.println("condição if com OU");
 
-        }else if (aFalse && aTrue){
+        } else if (aFalse && aTrue) {
             //aqui foi usado a condição relacional E "&&", nela as duas condiçoes devem ser verdadeiras
             System.out.println("condição if com &&");
-        }else {
+        } else {
             // dentro do else sem nenhuma condição se cada uma dos ifs anteriores não for verdadeiro ele cai aqui
             // faça o teste
             System.out.println("condição else");
