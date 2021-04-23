@@ -1,10 +1,22 @@
 package br.com.magalu.aulas.aula3.Livraria;
 
-public class Livros {
-    // cada livro deve ter nome, autor, matricula, titulo, quantidade, status;
+import java.time.LocalDateTime;
+
+public class Livros{
+
+    int matricula;
+    String nome;
+    LocalDateTime dataLocacao;
+    String autor;
+    String status;
+
+    public Livros(String nome, int matricula, String autor){
+
+    }
+
+   // cada livro deve ter nome, autor, matricula,
+    // titulo, quantidade, status
     // cada livro deve ter data de retirada e devolucao
     //crie um metodo para ordenar os livros por nome
-    //crie um metodo para cada livro alugado
-
-
+    //crie um metodo para lista os livros alugados
 }

@@ -75,16 +75,31 @@ public class TrabalhandoComListas {
         //https://pt.stackoverflow.com/questions/245129/ordenar-alfabeticamente-um-arraylist
     }
 
-    private void trabalhandoHashMap(){
+    public void trabalhandoHashMap(){
         //ArrayList
         // é um conjunto de elementos de um tipo definido. É uma estrutura ordenada de dados, ou seja, os valores podem ser acessados por seus índices.
 
         //HashMap
         //É um conjunto de pares de chave-valor, para cada elemento (valor) salvo num HashMap deve existir uma chave única atrelada a ele. Os elementos num HashMap devem ser acessados por suas chaves.
 
-        HashMap<Integer, Object> hashMap = new HashMap<>();
-        hashMap.put(1, "");
-        hashMap.put(5, "Overflow");
+        HashMap<String, Cliente> hashMap = new HashMap<>();
+
+    //    Cliente aluno1 = new Cliente();
+    //    aluno1.nome ="Camila" ;
+   //     aluno1.matricula = "1";
+
+    //    Cliente aluno2 = new Cliente();
+    //    aluno2.nome ="Vanessa" ;
+    //    aluno2.matricula = "2";
+
+     //   hashMap.put("a",aluno1);
+     //   hashMap.put("b",aluno2);
+
+        for (String i : hashMap.keySet()) {
+            System.out.println("CHAVE " + i);
+            System.out.println("VALOR - CLIENTE nome: " + hashMap.get(i).nome);
+            System.out.println("VALOR - CLIENTE matricula: " + hashMap.get(i).matricula);
+        }
 
     }
 

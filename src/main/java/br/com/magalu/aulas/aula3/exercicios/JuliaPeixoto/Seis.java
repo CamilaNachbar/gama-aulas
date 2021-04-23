@@ -13,7 +13,8 @@ public class Seis {
         System.out.print("Escreva a base: ");
         double base = sc.nextDouble();
 
-        double area = base * altura;
+
+        Double area = base * altura;
 
         System.out.print("Area: " + area);
 
