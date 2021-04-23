@@ -43,27 +43,27 @@ public class TrabalhandoComListas {
         //Lista de aluno
         List<Cliente> listaDeAlunos = new ArrayList<>();
 
-        Cliente aluno1 = new Cliente();
-        aluno1.nome ="Camila" ;
-        aluno1.matricula = "1";
+        //Cliente aluno1 = new Cliente();
+        //aluno1.nome ="Camila" ;
+       // aluno1.matricula = "1";
 
-        Cliente aluno2 = new Cliente();
-        aluno2.nome ="Vanessa" ;
-        aluno2.matricula = "2";
+       // Cliente aluno2 = new Cliente();
+     //   aluno2.nome ="Vanessa" ;
+     //   aluno2.matricula = "2";
 
 
-        Cliente aluno3 = new Cliente();
-        aluno3.nome ="Julia" ;
-        aluno3.matricula = "3";
+      //  Cliente aluno3 = new Cliente();
+      //  aluno3.nome ="Julia" ;
+      //  aluno3.matricula = "3";
 
-        Cliente aluno4 = new Cliente();
-        aluno4.nome ="Ana" ;
-        aluno4.matricula ="4" ;
+      //  Cliente aluno4 = new Cliente();
+      //  aluno4.nome ="Ana" ;
+      //  aluno4.matricula ="4" ;
 
-        listaDeAlunos.add(aluno1);
-        listaDeAlunos.add(aluno2);
-        listaDeAlunos.add(aluno3);
-        listaDeAlunos.add(aluno4);
+      //  listaDeAlunos.add(aluno1);
+     //   listaDeAlunos.add(aluno2);
+     //   listaDeAlunos.add(aluno3);
+     //   listaDeAlunos.add(aluno4);
 
         for (int i= 0; listaDeAlunos.size() >= i ; i++) {
             System.out.println("posicao" + i);
