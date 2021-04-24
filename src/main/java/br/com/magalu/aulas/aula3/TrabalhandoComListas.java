@@ -67,8 +67,8 @@ public class TrabalhandoComListas {
 
         for (int i= 0; listaDeAlunos.size() >= i ; i++) {
             System.out.println("posicao" + i);
-            System.out.println("nome: " + listaDeAlunos.get(i).nome);
-            System.out.println("matricula: " + listaDeAlunos.get(i).matricula);
+            System.out.println("nome: " + listaDeAlunos.get(i).getNome());
+            System.out.println("matricula: " + listaDeAlunos.get(i).getMatricula());
         }
 
         //https://www.alura.com.br/artigos/ordenando-uma-lista-de-objetos-em-java?gclid=Cj0KCQjwvYSEBhDjARIsAJMn0lj10i9jJ6cSC_1q0dD8eXYsW9bxpmICfZOhAPuQcQ55TKnM5QcVwdMaAkKEEALw_wcB
@@ -97,8 +97,8 @@ public class TrabalhandoComListas {
 
         for (String i : hashMap.keySet()) {
             System.out.println("CHAVE " + i);
-            System.out.println("VALOR - CLIENTE nome: " + hashMap.get(i).nome);
-            System.out.println("VALOR - CLIENTE matricula: " + hashMap.get(i).matricula);
+            System.out.println("VALOR - CLIENTE nome: " + hashMap.get(i).getNome());
+            System.out.println("VALOR - CLIENTE matricula: " + hashMap.get(i).getMatricula());
         }
 
     }

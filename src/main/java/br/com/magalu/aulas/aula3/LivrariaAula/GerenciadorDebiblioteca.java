@@ -53,7 +53,7 @@ public class GerenciadorDebiblioteca {
         imprimirLivros(livrosNaoAlugados);
     }
 
-    public void imprimirLivros(List<Livro> livrosParaImprimir) {
+    private void imprimirLivros(List<Livro> livrosParaImprimir) {
         for (Livro l : livrosParaImprimir) {
             System.out.println("----------------------------------------");
             System.out.println(l.toString());

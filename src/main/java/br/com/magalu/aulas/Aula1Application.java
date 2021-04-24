@@ -30,7 +30,7 @@ public class Aula1Application {
         Scanner scan = new Scanner(System.in);
 
         System.out.println("Olá, bem vindo a Livaria 23");
-        System.out.println("Você deseja ( 1 ) Alugar - ( 2 ) Devolver livro - ( 3 ) Trazer todos os não alugados");
+        System.out.println("Você deseja ( 1 ) Alugar - ( 2 ) Devolver livro - ( 3 ) Trazer t livro");
         Integer escolha = scan.nextInt();
 
         if(escolha.equals(1)){

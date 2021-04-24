@@ -4,9 +4,9 @@ import java.lang.reflect.Array;
 import java.time.LocalDateTime;
 
 public class Cliente {
-    public String nome;
-    public String matricula;
-    public Livros[] livros =  new Livros[2];
+    private String nome;
+    private String matricula;
+    private Livros[] livros =  new Livros[2];
 
 
     //SobrecargaDemetodo/construtor
@@ -56,7 +56,7 @@ public class Cliente {
         }
     }
 
-    public void validarDataDevolucao(Livros livros){
+    private void validarDataDevolucao(Livros livros){
         LocalDateTime devolucao = livros.dataLocacao.plusDays(2);
         if(devolucao.isBefore(LocalDateTime.now())){
                 System.out.println("devolucao sem multa");
@@ -64,5 +64,29 @@ public class Cliente {
             System.out.println("devolucao com multa");
         }
 
+    }
+
+    public String getNome() {
+        return nome;
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    public String getMatricula() {
+        return matricula;
+    }
+
+    public void setMatricula(String matricula) {
+        this.matricula = matricula;
+    }
+
+    public Livros[] getLivros() {
+        return livros;
+    }
+
+    public void setLivros(Livros[] livros) {
+        this.livros = livros;
     }
 }

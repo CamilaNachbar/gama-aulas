@@ -7,8 +7,8 @@ import java.util.*;
 
 public class Livraria {
 
-    public List<Cliente> clientes = new ArrayList<>();
-    public List<Livros> livrosNaoAlugados = new ArrayList<>();
+    private List<Cliente> clientes = new ArrayList<>();
+    private List<Livros> livrosNaoAlugados = new ArrayList<>();
 
     Scanner scan = new Scanner(System.in);
 
@@ -20,30 +20,30 @@ public class Livraria {
     }
 
     public void criarListaDelivros(){
-        livrosNaoAlugados.add(new Livro("Rati pedrada na jaca", 1, "JK"));
-        livrosNaoAlugados.add(new Livro("Matador de inocentes",2, "JR Martin"));
-        livrosNaoAlugados.add(new Livro("Palhaco vesgo", 3, ""));
-        livrosNaoAlugados.add(new Livro("Palhaco VESGO 2", 4, ""));
-        livrosNaoAlugados.add(new Livro("Palhaco vesgo 3", 5, ""));
-        livrosNaoAlugados.add(new Livro("Palhaco vesgo 4", 6, ""));
-        livrosNaoAlugados.add(new Livro("Palhaco vesgo 5", 7, ""));
-        livrosNaoAlugados.add(new Livro("Palhaco vesgo 6", 8, ""));
-        livrosNaoAlugados.add(new Livro("Palhaco vesgo: O FINAL", 9, ""));
+        livrosNaoAlugados.add(new Livros("Rati pedrada na jaca", 1, "JK"));
+        livrosNaoAlugados.add(new Livros("Matador de inocentes",2, "JR Martin"));
+        livrosNaoAlugados.add(new Livros("Palhaco vesgo", 3, ""));
+        livrosNaoAlugados.add(new Livros("Palhaco VESGO 2", 4, ""));
+        livrosNaoAlugados.add(new Livros("Palhaco vesgo 3", 5, ""));
+        livrosNaoAlugados.add(new Livros("Palhaco vesgo 4", 6, ""));
+        livrosNaoAlugados.add(new Livros("Palhaco vesgo 5", 7, ""));
+        livrosNaoAlugados.add(new Livros("Palhaco vesgo 6", 8, ""));
+        livrosNaoAlugados.add(new Livros("Palhaco vesgo: O FINAL", 9, ""));
 
     }
 
-    public Cliente buscaCliente(String matricula){
+    private Cliente buscaCliente(String matricula){
         for (Cliente cliente: clientes) {
-            if (cliente.matricula == matricula) {
+            if (cliente.getMatricula() == matricula) {
                 return cliente;
             }
         }
         return null;
     }
 
-    public Livros buscaLivro(int matricula){
+    private Livros buscaLivro(int matricula){
         for (Livros l: livrosNaoAlugados) {
-            if (l.matricula == matricula) {
+            if (l.getMatricula() == matricula) {
                 return l;
             }
         }
@@ -53,9 +53,9 @@ public class Livraria {
     public Livros buscaClientePelaMatriculaDoLivro(String matriculaDoCliente, int matriculaLivro){
       Cliente clientesDevolvendoLivro = buscaCliente(matriculaDoCliente);
 
-            for (Livros l: clientesDevolvendoLivro.livros){
+            for (Livros l: clientesDevolvendoLivro.getLivros()){
                 //compara a matricula unica
-               if( l.matricula == matriculaLivro){
+               if( l.getMatricula() == matriculaLivro){
                  return l;
                }
             }
@@ -79,7 +79,7 @@ public class Livraria {
         }
     }
 
-    public void validaLivro(Cliente cliente){
+    private void validaLivro(Cliente cliente){
         System.out.println("Entre com a matricula do livro a ser alugado");
         int matriculaDoLivro = scan.nextInt();
 
@@ -108,7 +108,7 @@ public class Livraria {
 
     }
 
-    public Cliente adicionaNovoCliente() {
+    private Cliente adicionaNovoCliente() {
         System.out.println("Deseja incluir novo cliente? S - 1 / N - 2");
         int aceite = scan.nextInt();
 
@@ -124,7 +124,7 @@ public class Livraria {
         }
     }
 
-    public String geradaNovaMatricula(){
+    private String geradaNovaMatricula(){
         return UUID.randomUUID().toString();
     }
 
@@ -132,9 +132,9 @@ public class Livraria {
     public void listarTodosNaoAlugados(){
         for (Livros l: livrosNaoAlugados) {
             System.out.println("----------------------------------------");
-            System.out.println("matricula: " + l.matricula);
-            System.out.println("nome: " + l.nome);
-            System.out.println("autor: " + l.autor);
+            System.out.println("matricula: " + l.getMatricula());
+            System.out.println("nome: " + l.getNome());
+            System.out.println("autor: " + l.getAutor());
             System.out.println("----------------------------------------");
         }
     }
