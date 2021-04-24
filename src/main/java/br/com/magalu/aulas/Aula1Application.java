@@ -30,24 +30,17 @@ public class Aula1Application {
         Scanner scan = new Scanner(System.in);
 
         System.out.println("Olá, bem vindo a Livaria 23");
-        System.out.println("Você deseja ( 1 ) Alugar - ( 2 ) Devolver livro - ( 3 ) Pesquisar livro");
+        System.out.println("Você deseja ( 1 ) Alugar - ( 2 ) Devolver livro - ( 3 ) Trazer todos os não alugados");
         Integer escolha = scan.nextInt();
 
         if(escolha.equals(1)){
             livraria.validaClienteParaAlugar();
         }else if (escolha.equals(2)){
-            System.out.println("Você deseja ( 1 ) Alugar ou ( 2 ) Devolver livro");
             livraria.devolverLivro();
         }else if (escolha.equals(3)){
             livraria.listarTodosNaoAlugados();
-
         } else{
             System.out.println("Opcao não disponivel");
         }
-
-
-
     }
-
-
 }
