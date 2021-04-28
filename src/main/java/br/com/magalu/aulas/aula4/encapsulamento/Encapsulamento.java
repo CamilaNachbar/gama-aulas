@@ -1,4 +1,4 @@
-package br.com.magalu.aulas.aula4;
+package br.com.magalu.aulas.aula4.encapsulamento;
 
 public class Encapsulamento {
 

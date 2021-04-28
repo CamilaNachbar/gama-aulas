@@ -1,19 +1,9 @@
 package br.com.magalu.aulas;
 
-import br.com.magalu.aulas.aula2.CalculadoraComListas;
-import br.com.magalu.aulas.aula3.Livraria.Cliente;
 import br.com.magalu.aulas.aula3.Livraria.Livraria;
-import br.com.magalu.aulas.aula3.TrabalhandoComListas;
-import br.com.magalu.aulas.aula3.exercicios.EdileneLopes.Exercicio5;
-import br.com.magalu.aulas.aula3.exercicios.GonzalezCarol.Exercicio3;
-import br.com.magalu.aulas.aula3.exercicios.GonzalezCarol.Exercicio4;
-import br.com.magalu.aulas.aula3.exercicios.JuliaPeixoto.Seis;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
-import java.io.IOException;
-import java.util.ArrayList;
-import java.util.List;
 import java.util.Scanner;
 
 @SpringBootApplication

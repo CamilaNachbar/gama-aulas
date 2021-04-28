@@ -21,22 +21,7 @@ public class Livro {
 
     }
 
-    public void ordenarPorNome(){}
-    public void listarAlugados(){}
 
-
-    @Override
-    public String toString() {
-        return "Livro{" +
-                "matricula=" + matricula +
-                ", titulo='" + titulo + '\'' +
-                ", dataLocacao=" + dataLocacao +
-                ", dataDevolucao=" + dataDevolucao +
-                ", autor='" + autor + '\'' +
-                ", status=" + status +
-                ", quantidade=" + quantidade +
-                '}';
-    }
 
 
     //crie um metodo para ordenar os livros por nome
@@ -95,5 +80,18 @@ public class Livro {
 
     public void setQuantidade(Integer quantidade) {
         this.quantidade = quantidade;
+    }
+
+    @Override
+    public String toString() {
+        return "Livro{" +
+                "matricula=" + matricula +
+                ", titulo='" + titulo + '\'' +
+                ", dataLocacao=" + dataLocacao +
+                ", dataDevolucao=" + dataDevolucao +
+                ", autor='" + autor + '\'' +
+                ", status=" + status +
+                ", quantidade=" + quantidade +
+                '}';
     }
 }

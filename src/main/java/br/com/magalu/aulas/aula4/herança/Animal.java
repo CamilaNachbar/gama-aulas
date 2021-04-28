@@ -1,9 +1,11 @@
-package br.com.magalu.aulas.aula4;
+package br.com.magalu.aulas.aula4.herança;
+
+import br.com.magalu.aulas.aula4.ComportamentoAnimal;
 
 import java.time.LocalDateTime;
 
 //super Classe - Classe mãe
-public class Animal implements ComportamentoAnimal, banco{
+public class Animal implements ComportamentoAnimal {
 
     private String nomeCientifico;
     private String genero;

@@ -1,7 +1,9 @@
-package br.com.magalu.aulas.aula4;
+package br.com.magalu.aulas.aula4.herança;
+
+import br.com.magalu.aulas.aula4.ComportamentoAnimal;
 
 //para herdar uma classe em java nós usamos o extends
-public class Cachorro extends Mamifero implements ComportamentoAnimal, banco{
+public class Cachorro extends Mamifero implements ComportamentoAnimal {
 
     private String nome;
     private String nomeDoDono;

@@ -11,8 +11,6 @@ public class App {
     public static void main(String[] args) throws Exception {
         SpringApplication.run(App.class, args);
 
-
-
         //porque usar um construtor vazio ?
         //quando eu tenho um objeto que possui 1 atributo true, como eu imprimo esse objeto de dentro da lista?
 
