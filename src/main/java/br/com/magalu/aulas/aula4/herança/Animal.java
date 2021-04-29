@@ -5,7 +5,7 @@ import br.com.magalu.aulas.aula4.ComportamentoAnimal;
 import java.time.LocalDateTime;
 
 //super Classe - Classe mãe
-public class Animal implements ComportamentoAnimal {
+public class Animal {
 
     private String nomeCientifico;
     private String genero;
@@ -59,47 +59,18 @@ public class Animal implements ComportamentoAnimal {
         this.temperamento = temperamento;
     }
 
-    @Override
-    public void nascer() {
-        // 04/02/2021
-
-    }
-
-    @Override
     public void comer() {
         System.out.println("CAÇAR");
     }
 
-    @Override
+
     public void morrer() {
         System.out.println("MORREU");
 
     }
 
-    @Override
     public void procriar() {
         System.out.println("FEZ FILHOTES");
-
-    }
-
-
-    @Override
-    public void salvar() {
-        // salva bichim
-    }
-
-    @Override
-    public void atualizar() {
-
-    }
-
-    @Override
-    public void deletar() {
-
-    }
-
-    @Override
-    public void listar() {
 
     }
 }

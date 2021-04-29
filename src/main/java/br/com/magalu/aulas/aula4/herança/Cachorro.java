@@ -3,7 +3,7 @@ package br.com.magalu.aulas.aula4.herança;
 import br.com.magalu.aulas.aula4.ComportamentoAnimal;
 
 //para herdar uma classe em java nós usamos o extends
-public class Cachorro extends Mamifero implements ComportamentoAnimal {
+public class Cachorro extends Mamifero {
 
     private String nome;
     private String nomeDoDono;
@@ -29,24 +29,5 @@ public class Cachorro extends Mamifero implements ComportamentoAnimal {
         this.nomeDoDono = nomeDoDono;
     }
 
-    @Override
-    public void salvar() {
-        // eu salvo cachorro
-    }
 
-    @Override
-    public void atualizar() {
-        // atualizo cachorro
-    }
-
-    @Override
-    public void deletar() {
-        // deleto cachorro
-
-    }
-
-    @Override
-    public void listar() {
-
-    }
 }

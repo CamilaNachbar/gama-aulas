@@ -1,9 +1,10 @@
-package br.com.magalu.aulas.aula3.Livraria;
+/* package br.com.magalu.aulas.aula3.Livraria;
 
 import java.time.LocalDateTime;
 
 public class Livros{
 
+    public LocalDateTime dataLocacao;
     private int matricula;
     private String nome;
     private LocalDateTime dataLocacao;
@@ -60,3 +61,4 @@ public class Livros{
     //crie um metodo para ordenar os livros por nome
     //crie um metodo para lista os livros alugados
 }
+*/

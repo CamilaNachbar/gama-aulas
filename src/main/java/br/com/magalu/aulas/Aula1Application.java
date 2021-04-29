@@ -1,9 +1,14 @@
 package br.com.magalu.aulas;
 
 import br.com.magalu.aulas.aula3.Livraria.Livraria;
+import br.com.magalu.aulas.aula4.herança.Animal;
+import br.com.magalu.aulas.aula6.Livraria;
+import br.com.magalu.aulas.aula6.Predio;
+import br.com.magalu.aulas.reforço.Data;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
+import java.time.LocalDate;
 import java.util.Scanner;
 
 @SpringBootApplication
@@ -13,24 +18,21 @@ public class Aula1Application {
         SpringApplication.run(Aula1Application.class, args);
 
         Livraria livraria = new Livraria();
+        livraria.horarioDefechamento();
+        livraria.getLocalizacao();
+        livraria.setLocalizacao("Avenida Santo Antonio");
 
-        livraria.criarListaDeClientes();
-        livraria.criarListaDelivros();
+        //dia
+        //mes
+        //ano
+        //regex
+        //localDate
+        Data dataClass = new Data("14/02/2020");
 
-        Scanner scan = new Scanner(System.in);
+        //
+        LocalDate dataParaComparar = LocalDate.of(2020,12,11);
+        LocalDate.
+        dataClass.compara(dataParaComparar);
 
-        System.out.println("Olá, bem vindo a Livaria 23");
-        System.out.println("Você deseja ( 1 ) Alugar - ( 2 ) Devolver livro - ( 3 ) Trazer t livro");
-        Integer escolha = scan.nextInt();
-
-        if(escolha.equals(1)){
-            livraria.validaClienteParaAlugar();
-        }else if (escolha.equals(2)){
-            livraria.devolverLivro();
-        }else if (escolha.equals(3)){
-            livraria.listarTodosNaoAlugados();
-        } else{
-            System.out.println("Opcao não disponivel");
-        }
     }
 }
