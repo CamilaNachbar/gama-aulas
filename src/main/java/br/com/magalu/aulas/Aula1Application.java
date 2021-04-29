@@ -19,7 +19,7 @@ public class Aula1Application {
 
         int comparador = dataClass.compara(LocalDate.of(2022,1,21));
         System.out.println("comparador: "+  comparador);
-        System.out.println("DIA" + dataClass.getDate());
+        System.out.println("DIA: " + dataClass.getDate());
         System.out.println("MES: "+ dataClass.getMes());
         System.out.println("ANO: " + dataClass.getYear());
 

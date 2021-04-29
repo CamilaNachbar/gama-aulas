@@ -10,6 +10,9 @@ import java.util.regex.Pattern;
 
 public class Data {
 
+    //confere se a data é valida
+    //regex serve para conferir se uma string segue certo padrões que vc pode configurar no regex
+    // YYYY-MM-DD
     private static Pattern DATE_PATTERN = Pattern.compile(
             "^((2000|2400|2800|(19|2[0-9](0[48]|[2468][048]|[13579][26])))-02-29)$"
                     + "|^(((19|2[0-9])[0-9]{2})-02-(0[1-9]|1[0-9]|2[0-8]))$"
@@ -21,18 +24,27 @@ public class Data {
     private LocalDate date;
 
     public Data(String data) {
-        //dd/MM/yyyy
+        //dd/MM/yyyy <- Quero esta configuração para a data
         //vê se a data passada por parametro esta no padrão certo
+        // metodo que valida e formata a data
+
+        // tenta executar to  do o bloco
+        // e caso aconteça algum erro
         try {
+            //retorna um booleano
         if (DATE_PATTERN.matcher(data).matches()) {
-
+            //atende a config dd/MM/YYYY
                 DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd/MM/yyyy");
+                // parsiei a string para LocalDate
+                //Atribui para o atributo da classe
                 this.date = LocalDate.parse(data);
+                // formatei a data
                 String dataFormatada = this.date.format(formatter);
+                // printa a data formatada
                 System.out.println("LocalDate depois de formatar: " + dataFormatada);
-
         }
         }catch (Exception e){
+            //cai na exception
             System.out.println("Data invalida");
         }
     }
