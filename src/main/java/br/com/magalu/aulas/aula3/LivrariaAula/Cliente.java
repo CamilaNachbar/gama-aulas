@@ -5,6 +5,31 @@ public class Cliente {
 
     public String nome;
     public int matricula;
+
+    public int getMatricula() {
+        return matricula;
+    }
+
+    public void setMatricula(int matricula) {
+        this.matricula = matricula;
+    }
+
+    public Livro[] getLivro() {
+        return livro;
+    }
+
+    public void setLivro(Livro[] livro) {
+        this.livro = livro;
+    }
+
+    public String getNome() {
+        return nome;
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
     public Livro[] livro = new Livro[2];
 
     public Cliente(String nome, int matricula){

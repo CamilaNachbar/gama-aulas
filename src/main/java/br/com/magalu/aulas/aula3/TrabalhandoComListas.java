@@ -1,8 +1,7 @@
 package br.com.magalu.aulas.aula3;
 
-import br.com.magalu.aulas.aula3.Livraria.Cliente;
-import br.com.magalu.aulas.aula3.escola.Aluno;
-import br.com.magalu.aulas.aula3.exercicios.GonzalezCarol.Print;
+
+import br.com.magalu.aulas.aula3.LivrariaAula.Cliente;
 
 import java.util.*;
 
