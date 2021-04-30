@@ -1,11 +1,8 @@
 package br.com.magalu.aulas.reforço;
 
 
-import java.text.ParseException;
-import java.text.SimpleDateFormat;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
-import java.util.Date;
 import java.util.regex.Pattern;
 
 public class Data {
@@ -23,31 +20,53 @@ public class Data {
     private LocalDate currentDate = LocalDate.now();
     private LocalDate date;
 
-    public Data(String data) {
+
+    public Data(String data) throws Exception {
         //dd/MM/yyyy <- Quero esta configuração para a data
         //vê se a data passada por parametro esta no padrão certo
         // metodo que valida e formata a data
 
         // tenta executar to  do o bloco
         // e caso aconteça algum erro
-        try {
+        try { // tento logar no site
             //retorna um booleano
-        if (DATE_PATTERN.matcher(data).matches()) {
-            //atende a config dd/MM/YYYY
+            if (DATE_PATTERN.matcher(data).matches()) {
+                System.out.println("Depois do regex: " + data);
+
+                //atende a config dd/MM/YYYY
                 DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd/MM/yyyy");
                 // parsiei a string para LocalDate
                 //Atribui para o atributo da classe
                 this.date = LocalDate.parse(data);
                 // formatei a data
+
+
                 String dataFormatada = this.date.format(formatter);
                 // printa a data formatada
                 System.out.println("LocalDate depois de formatar: " + dataFormatada);
-        }
+            }
         }catch (Exception e){
-            //cai na exception
-            System.out.println("Data invalida");
+            //aqui eu printo a exception
+            /// throw new Exception();
+            System.out.println("printa exception");
+
+        }finally {
+            // finally é como um escape da exeception, ele executa tal acao e depois o throw para o codigo
+            System.out.println("cai no finally");
         }
     }
+
+    //try tenta executar o bloco de codigo
+    //catch - caso haja alguma exception no bloco do try, ele pode logar o erro ou parar o codigo
+    // finally -
+
+
+    // Exemplo: tento logar em um site
+    // dentro do bloco do try eu tento fazer o login com sucesso
+    // em algum momento acontece um erro, pode exemplo. Eu fiz o login mas não tive resposta da lista de produtos
+    // eu printo o erro no catch e no finally eu garanto que meu usuario foi deslogado
+
+
 
     public int compara(LocalDate data) {
         //  comparar valor recebido como parametro (data) com a data recorrente ( LocalDate.now() )
